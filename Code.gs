@@ -241,7 +241,6 @@ function emailSender(mailData){
       emailText += '</table>'
     }
     emailText += '</td></tr></table></div></td><td>&nbsp;</td></tr></table></body></html>';
-    Logger.log(emailText);
     if (!AdsApp.getExecutionInfo().isPreview()) {
       Logger.log("Send mail to: %s", mailData.email)
       MailApp.sendEmail({
